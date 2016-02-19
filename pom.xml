@@ -22,7 +22,7 @@
     <maven>3.0</maven>
   </prerequisites>
   <properties>
-    <ounit.marks>5</ounit.marks>
+    <ounit.marks>8</ounit.marks>
   </properties>
 
 

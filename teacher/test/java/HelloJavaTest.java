@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  */
 public class HelloJavaTest {
 
-    // public static final double DELTA = 0.0000001;
+    public static final double DELTA = 0.0000001;
 
     @Test(timeout = 1000)
     public void sayHelloTest() {
@@ -49,7 +49,7 @@ public class HelloJavaTest {
         assertThat(HelloJava.reverseCase("Hello world!"),
                 is("hELLO WORLD!"));
     }
-/*
+
     @Test(timeout = 1000)
     public void defineFunctionalInterfaceTest() {
         assertEquals("HelloJava.defineFunctionalInterface() failed", 42.0,
@@ -65,6 +65,6 @@ public class HelloJavaTest {
     @Test(timeout = 1000)
     public void functionCombinationTest() {
         assertThat(HelloJava.functionCombination(), is(-1));
-    }*/
+    }
 }
 
