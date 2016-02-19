@@ -4,12 +4,6 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-/**
- *
- * Code samples provided by Jaanus Pöial
- *
- * @see http://www.slideshare.net/jpoial/wien15-java8
- */
 public class HelloJava {
 
     public static String sayHello() {

@@ -12,14 +12,14 @@ import static org.junit.Assert.*;
  */
 public class HelloJavaTest {
 
-    public static final double DELTA = 0.0000001;
+    // public static final double DELTA = 0.0000001;
 
     @Test(timeout = 1000)
     public void sayHelloTest() {
         String str = HelloJava.sayHello();
         assertThat(str, is("Hello Java"));
     }
-
+/*
     @Test(timeout = 1000)
     public void sortIntegersTest() {
         List<Integer> initialList = new ArrayList<Integer>(Arrays.asList(678,
@@ -65,6 +65,6 @@ public class HelloJavaTest {
     @Test(timeout = 1000)
     public void functionCombinationTest() {
         assertThat(HelloJava.functionCombination(), is(-1));
-    }
+    }*/
 }
 

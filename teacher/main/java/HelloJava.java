@@ -4,19 +4,13 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-/**
- *
- * Code samples provided by Jaanus Pöial
- *
- * @see http://www.slideshare.net/jpoial/wien15-java8
- */
 public class HelloJava {
 
     public static String sayHello() {
         // return "";
         return "Hello Java";
     }
-
+/*
     public static void genericsReplaceTest() {
         List<String> al = new ArrayList<>();
         System.out.println(al);
@@ -171,6 +165,6 @@ public class HelloJava {
             Talker3.newlog(x.toString()); // it is possible to use interface
             // static method in class
         }
-    }
+    }*/
 }
 
