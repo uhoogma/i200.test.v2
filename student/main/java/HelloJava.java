@@ -11,7 +11,7 @@ public class HelloJava {
     }
 
     public static void genericsReplaceTest() {
-        List<String> al = new ArrayList<>();
+        List<String> al = new ArrayList<String>();
         System.out.println(al);
         // List<Div> html = new ArrayList<>(); // still crashes Wicket
         // Collection<?> b = new ArrayList<>(); // wildcard replacement not supported
@@ -36,11 +36,23 @@ public class HelloJava {
     public static Double defineFunctionalInterface(Double param) {
         return -1.0;
     }
-/*
+
     public static String reverseCase(String param) {
         return "";
     }
 
+    // user defined map
+    public static int myMap(int chi) {
+        char ch = (char) chi;
+        if (Character.isLowerCase(ch)) {
+            return Character.toUpperCase(ch);
+        } else if (Character.isUpperCase(ch)) {
+            return Character.toLowerCase(ch);
+        } else {
+            return ch;
+        }
+    }
+/*
     public static Double functionComposition(Double param) {
         return -1.0;
     }
@@ -79,17 +91,7 @@ public class HelloJava {
         return x -> b.apply(x, arg);
     }
 
-    // user defined map
-    public static int myMap(int chi) {
-        char ch = (char) chi;
-        if (Character.isLowerCase(ch)) {
-            return Character.toUpperCase(ch);
-        } else if (Character.isUpperCase(ch)) {
-            return Character.toLowerCase(ch);
-        } else {
-            return ch;
-        }
-    }
+    
 
     // User defined functional interface
     // @FunctionalInterface

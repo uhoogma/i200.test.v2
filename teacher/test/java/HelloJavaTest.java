@@ -43,13 +43,13 @@ public class HelloJavaTest {
         Integer result = HelloJava.sumListConditionally(initialList);
         assertThat(result, is(1356));
     }
-/*
+
     @Test(timeout = 1000)
     public void reverseCaseTest() {
         assertThat(HelloJava.reverseCase("Hello world!"),
                 is("hELLO WORLD!"));
     }
-
+/*
     @Test(timeout = 1000)
     public void defineFunctionalInterfaceTest() {
         assertEquals("HelloJava.defineFunctionalInterface() failed", 42.0,

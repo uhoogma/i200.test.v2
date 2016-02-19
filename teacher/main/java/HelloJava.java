@@ -12,7 +12,7 @@ public class HelloJava {
     }
 
     public static void genericsReplaceTest() {
-        List<String> al = new ArrayList<>();
+        List<String> al = new ArrayList<String>();
         System.out.println(al);
         // List<Div> html = new ArrayList<>(); // still crashes Wicket
         // Collection<?> b = new ArrayList<>(); // wildcard replacement not supported
@@ -49,14 +49,26 @@ public class HelloJava {
         return dtalk.talk(param);
         // return -1.0;
     }
-
+*/
     public static String reverseCase(String param) {
         StringBuilder sb = new StringBuilder();
         param.chars().map(HelloJava::myMap).forEach(ch -> sb.append((char) ch));
         // return "";
         return sb.toString();
     }
+    // user defined map
+    public static int myMap(int chi) {
+        char ch = (char) chi;
+        if (Character.isLowerCase(ch)) {
+            return Character.toUpperCase(ch);
+        } else if (Character.isUpperCase(ch)) {
+            return Character.toLowerCase(ch);
+        } else {
+            return ch;
+        }
+    }
 
+/*
     public static Double functionComposition(Double param) {
         Function<Double, Double> g = ((Function<Double, Double>) Math::sin)
                 .compose(Math::toRadians);
@@ -104,17 +116,6 @@ public class HelloJava {
         return x -> b.apply(x, arg);
     }
 
-    // user defined map
-    public static int myMap(int chi) {
-        char ch = (char) chi;
-        if (Character.isLowerCase(ch)) {
-            return Character.toUpperCase(ch);
-        } else if (Character.isUpperCase(ch)) {
-            return Character.toLowerCase(ch);
-        } else {
-            return ch;
-        }
-    }
 
     // User defined functional interface
     @FunctionalInterface
