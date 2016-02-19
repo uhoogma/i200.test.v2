@@ -21,5 +21,9 @@
   <prerequisites>
     <maven>3.0</maven>
   </prerequisites>
+  <properties>
+    <ounit.marks>1</ounit.marks>
+  </properties>
+
 
 </project>
