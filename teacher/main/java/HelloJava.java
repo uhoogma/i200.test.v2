@@ -43,13 +43,13 @@ public class HelloJava {
         // return -1;
         return conditional;
     }
-/*
+
     public static Double defineFunctionalInterface(Double param) {
         Talker<Double> dtalk = i -> returnValue(i);
         return dtalk.talk(param);
         // return -1.0;
     }
-*/
+
     public static String reverseCase(String param) {
         StringBuilder sb = new StringBuilder();
         param.chars().map(HelloJava::myMap).forEach(ch -> sb.append((char) ch));
@@ -67,14 +67,7 @@ public class HelloJava {
             return ch;
         }
     }
-// User defined functional interface
-    @FunctionalInterface
-    interface Talker<X> {
 
-        Double talk(X x);
-    }
-
-/*
     public static Double functionComposition(Double param) {
         Function<Double, Double> g = ((Function<Double, Double>) Math::sin)
                 .compose(Math::toRadians);
@@ -172,6 +165,6 @@ public class HelloJava {
             Talker3.newlog(x.toString()); // it is possible to use interface
             // static method in class
         }
-    }*/
+    }
 }
 

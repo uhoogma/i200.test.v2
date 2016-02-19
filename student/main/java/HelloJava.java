@@ -53,13 +53,7 @@ public class HelloJava {
         }
     }
 
-// User defined functional interface
-    @FunctionalInterface
-    interface Talker<X> {
 
-        Double talk(X x);
-    }
-/*
     public static Double functionComposition(Double param) {
         return -1.0;
     }
@@ -101,14 +95,14 @@ public class HelloJava {
     
 
     // User defined functional interface
-    // @FunctionalInterface
+    @FunctionalInterface
     interface Talker<X> {
 
         Double talk(X x);
     }
 
     // User defined functional interface
-    // @FunctionalInterface
+    @FunctionalInterface
     interface Talker2<X> {
 
         void talk(X x);
@@ -149,6 +143,6 @@ public class HelloJava {
             Talker3.newlog(x.toString()); // it is possible to use interface
             // static method in class
         }
-    }*/
+    }
 }
 
