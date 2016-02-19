@@ -10,13 +10,6 @@ public class HelloJava {
         return "";
     }
 
-    public static void genericsReplaceTest() {
-        List<String> al = new ArrayList<String>();
-        System.out.println(al);
-        // List<Div> html = new ArrayList<>(); // still crashes Wicket
-        // Collection<?> b = new ArrayList<>(); // wildcard replacement not supported
-    }
-
     public void methodWithComplicatedSignature(List<? extends String> shapes) {
 
     }

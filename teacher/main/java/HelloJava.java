@@ -7,15 +7,7 @@ import java.util.function.Function;
 public class HelloJava {
 
     public static String sayHello() {
-        // return "";
         return "Hello Java";
-    }
-
-    public static void genericsReplaceTest() {
-        List<String> al = new ArrayList<String>();
-        System.out.println(al);
-        // List<Div> html = new ArrayList<>(); // still crashes Wicket
-        // Collection<?> b = new ArrayList<>(); // wildcard replacement not supported
     }
 
     public void methodWithComplicatedSignature(List<? extends String> shapes) {
@@ -24,7 +16,6 @@ public class HelloJava {
 
     public static List<Integer> sortIntegers(List<Integer> myList) {
         Collections.sort(myList, (n1, n2) -> n1 > n2 ? 1 : (n1 < n2 ? -1 : 0));
-        // return new ArrayList<Integer>();
         return myList;
     }
 
@@ -32,7 +23,6 @@ public class HelloJava {
         Integer sum = myList.stream().filter(elem -> (elem > 0))
                 .reduce(0, (s, e) -> s + e);
         System.out.println("SumPos is: " + sum);
-        // return -1;
         return sum;
     }
 
@@ -40,22 +30,20 @@ public class HelloJava {
         Integer conditional = myList.stream().map(e -> e * 2)
                 .filter(e -> (e > 3)).findFirst().orElse(null);
         System.out.println("conditional is: " + conditional);
-        // return -1;
         return conditional;
     }
 
     public static Double defineFunctionalInterface(Double param) {
         Talker<Double> dtalk = i -> returnValue(i);
         return dtalk.talk(param);
-        // return -1.0;
     }
 
     public static String reverseCase(String param) {
         StringBuilder sb = new StringBuilder();
         param.chars().map(HelloJava::myMap).forEach(ch -> sb.append((char) ch));
-        // return "";
         return sb.toString();
     }
+
     // user defined map
     public static int myMap(int chi) {
         char ch = (char) chi;
@@ -71,7 +59,6 @@ public class HelloJava {
     public static Double functionComposition(Double param) {
         Function<Double, Double> g = ((Function<Double, Double>) Math::sin)
                 .compose(Math::toRadians);
-        // return -1.0;
         return (g.apply(param));
     }
 
@@ -81,7 +68,6 @@ public class HelloJava {
         p1.apply(8);
         Function<Integer, Integer> p2 = proj2(p, 1);
         p2.apply(9);
-        // return -2;
         return (functionCombination(p1, p2).apply(4));
     }
 
