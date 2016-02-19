@@ -67,6 +67,12 @@ public class HelloJava {
             return ch;
         }
     }
+// User defined functional interface
+    @FunctionalInterface
+    interface Talker<X> {
+
+        Double talk(X x);
+    }
 
 /*
     public static Double functionComposition(Double param) {
