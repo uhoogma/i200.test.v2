@@ -36,7 +36,7 @@ public class HelloJava {
     public static Double defineFunctionalInterface(Double param) {
         return -1.0;
     }
-
+/*
     public static String reverseCase(String param) {
         return "";
     }
@@ -140,6 +140,6 @@ public class HelloJava {
             Talker3.newlog(x.toString()); // it is possible to use interface
             // static method in class
         }
-    }
+    }*/
 }
 

@@ -19,7 +19,7 @@ public class HelloJavaTest {
         String str = HelloJava.sayHello();
         assertThat(str, is("Hello Java"));
     }
-/*
+
     @Test(timeout = 1000)
     public void sortIntegersTest() {
         List<Integer> initialList = new ArrayList<Integer>(Arrays.asList(678,
@@ -43,7 +43,7 @@ public class HelloJavaTest {
         Integer result = HelloJava.sumListConditionally(initialList);
         assertThat(result, is(1356));
     }
-
+/*
     @Test(timeout = 1000)
     public void reverseCaseTest() {
         assertThat(HelloJava.reverseCase("Hello world!"),

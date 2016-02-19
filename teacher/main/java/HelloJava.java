@@ -10,7 +10,7 @@ public class HelloJava {
         // return "";
         return "Hello Java";
     }
-/*
+
     public static void genericsReplaceTest() {
         List<String> al = new ArrayList<>();
         System.out.println(al);
@@ -43,7 +43,7 @@ public class HelloJava {
         // return -1;
         return conditional;
     }
-
+/*
     public static Double defineFunctionalInterface(Double param) {
         Talker<Double> dtalk = i -> returnValue(i);
         return dtalk.talk(param);
